@@ -1,9 +1,3 @@
-#======================================================#
-#     The Browning Dress Code: Fighting Oppression     #
-#------------------------------------------------------#
-#            A game by Sebastian Rodriguez             #
-#======================================================#
-
 require './scenes.rb'
 
 class Engine
