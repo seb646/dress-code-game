@@ -1,5 +1,5 @@
 #======================================================#
-#     The Browning Dress Code: Fighting Oppression     #
+#               The Browning Dress Code                #
 #------------------------------------------------------#
 #            A game by Sebastian Rodriguez             #
 #======================================================#
