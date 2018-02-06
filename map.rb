@@ -30,12 +30,12 @@ module Map
     <p>'Oh here we go...', you mumble.</p>
     <p>'Was there a change in the dress code that I'm not aware of? I can't seem think of any other reason why you'd be out of uniform.'</p>
 
-     <p>What is your response?</p>
-     <p>1. Boi, it is 8:30 in the morning. I'm really not tryna do this now.</p>
-     <p>2. Not all of us wear the same dusty jacket and tie everyday.</p>
-     <p>3. Sorry about that. It won't happen again.</p>
-
-     <p>Enter a number below:</p>
+    <p>What is your response? (Enter a number)</p>
+    <ol>
+      <li>Boi, it is 8:30 in the morning. I'm really not tryna do this now.</li>
+      <li>Not all of us wear the same dusty jacket and tie everyday.</li>
+      <li>Sorry about that. It won't happen again.</li>
+    </ol>
      """)
 
   ADVISORY = Room.new("Ms. Bryan's Advisory",
@@ -46,11 +46,11 @@ module Map
 
     <p>'Myles...do you want to tell me why you're out of dress code?' she asks.</p>
 
-    <p>What is your response?</p>
-    <p>1. Not really, no.</p>
-    <p>2. I woke up late and I couldn't find my blazer.</p>
-
-    <p>Enter a number below:</p>
+    <p>What is your response? (Enter a number)</p>
+    <ol>
+      <li>Not really, no.</li>
+      <li>I woke up late and I couldn't find my blazer.</li>
+    </ol>
     """)
 
   MATH = Room.new("Pre-Calculus",
@@ -76,14 +76,20 @@ module Map
 
   THE_END_WINNER = Room.new("The End",
     """
-    <p>Congratulations. You've made it through three periods 'out of dress' code.</p>
+    <center>
+      <h5>Lol, I'm still giving you a detention.</h5>
+      <img src='https://media.giphy.com/media/649rruiSkqnyU/giphy.gif'/><br>
+      <p>Mr. Clean has still decided to give you a detention. You must serve the detention after school or you will be given another detention.</p>
+    </center>
     """)
 
   THE_END_LOSER = Room.new("The End",
     """
-    <p>'I'll let you off this time, but don't let me catch you without a blazer again.'</p>
-
-    <p>You exhale and finally open the door to the locker room. You toss your bag to the side and sit down on the bench to relax.</p>
+    <center>
+      <h5>Seriously, Dude?</h5>
+      <img src='https://media.giphy.com/media/t8YlRWLnICrh6/giphy.gif'/><br>
+      <p>Mr. Clean has given you a detention that you must serve after school (or else nothing will happen).</p>
+    </center>
     """
     )
 

@@ -1,13 +1,21 @@
-<h1><%= room.name %></h1>
+<div class="card-panel">
+    <blockquote><h5><%= room.name %></h5></blockquote>
+    <%= room.description %>
+</div>
 
-<%= room.description %>
-
-<% if room.name == 'death' || room.name == "The End" %>
-    <p><a href='/'>Play again?</a></p>
-<% else %> 
-    <form action="/game" method="POST">
-        <input type="text" name="action">
-        
-        <input class="waves-effect waves-light btn" type="SUBMIT"></input>
-    </form>
-<% end %>
+<div class="card-panel">
+    <% if room.name == 'death' || room.name == "The End" %>
+        <center><a class="waves-effect waves-light btn green darken-3" href="/">Play Again</a></center>
+    <% else %> 
+        <form action="/game" method="POST">
+            <div class="row">
+                <div class="input-field col s12">
+                  <input id="text" type="text" name="action" class="validate">
+                  <label for="text" class="active">Enter response:</label>
+                </div>
+            </div>
+            
+            <input class="waves-effect waves-light btn red darken-1" type="SUBMIT"></input>
+        </form>
+    <% end %>
+</div>
